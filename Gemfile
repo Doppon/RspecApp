@@ -59,7 +59,7 @@ group :test do
   # 名前やメールアドレス、その他のプレースホルダをファクトリに提供するやーつ
   gem 'faker'
   # テストデータベースをまっさらな状態に綺麗にしてくれるやーつ
-  gem 'database_clener'
+  gem 'database_cleaner'
   # ブラウザでアプリの内容を見れるようにするやーつ
   gem 'launchy'
   # JSを使う機能をカピバラちゃんでテスト出来るようにするやーつ
