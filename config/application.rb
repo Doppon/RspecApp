@@ -14,5 +14,17 @@ module RspecApp
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    # モデル、コントローラー、scaffoldを作成時にspecファイルを自動生成
+    config.generatorsdo|g|
+      g.test_framework :rspec,
+        fixtures: true,
+        view_specs: false,
+        helper_specs: false,
+        routing_specs: false,
+        controller_specs: true,
+        request_specs: false
+      .fixture_replacement :factory_girl, dir: "spec/factories"
+    end
   end
 end
